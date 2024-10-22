@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-undef
 const config = require('../config');
 
-test('deleting the kit', async () => {
+test('Should be 200 status code for deleting a kit', async () => {
     let actualStatus;
 	try {
 		const response = await fetch(`${config.API_URL}/api/v1/kits/7`, {

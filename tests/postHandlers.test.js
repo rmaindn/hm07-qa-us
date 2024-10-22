@@ -34,7 +34,7 @@ test('status should be 200', async () => {
 	expect (actualStatus).toBe(200)
 });
 
-test('everything you need', async () => {
+test('should be 200 ok for everything you need', async () => {
 	let actualResponse;
     try {
 		const response = await fetch(`${config.API_URL}/everything-you-need/v1/calculate`, {
